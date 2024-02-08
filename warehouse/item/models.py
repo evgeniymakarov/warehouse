@@ -13,7 +13,8 @@ class Item(models.Model):
     amount = models.CharField(max_length=10, blank=True)
 
     def __str__(self):
-        return (str(self.id) + '. ' + self.title + ' [' + str(self.cat) + '/' + str(self.wh) + '/' + str(self.pos) + ']')
+        return (str(self.id) + '. ' + self.title + ' [' + str(self.cat) + '/' + str(self.wh) + '/' + str(
+            self.pos) + ']')
 
 
 class Category(models.Model):
