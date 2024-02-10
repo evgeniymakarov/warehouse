@@ -20,4 +20,3 @@ class ItemsAPITestCase(APITestCase):
         serializer_data = ItemsSerializer([item_1, item_2], many=True).data
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertEqual(serializer_data, response.data)
-        print (serializer_data)

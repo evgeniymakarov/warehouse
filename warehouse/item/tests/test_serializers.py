@@ -3,8 +3,10 @@ from django.test import TestCase
 from item.models import Warehouse, Position, Category, Units, Item
 from item.serializers import ItemsSerializer
 
-
-class ItemSerializersTestCase(TestCase):
+'''
+проверка работы сериализатора ItemsSerializer
+'''
+class ItemsSerializerTestCase(TestCase):
     def test_ok(self):
         wh = Warehouse.objects.create(title='Test Store')
         pos = Position.objects.create(title='Test Position')
@@ -39,6 +41,4 @@ class ItemSerializersTestCase(TestCase):
                 "units": item_2.units.id,
             }
         ]
-        print(data)
-        print(expected_data)
         self.assertEqual(expected_data, data)
