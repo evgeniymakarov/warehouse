@@ -7,16 +7,44 @@ from item.serializers import ItemsSerializer
 
 
 class ItemsAPITestCase(APITestCase):
-    def test_get(self):
+    def setUp(self):
         wh = Warehouse.objects.create(title='Test Store')
         pos = Position.objects.create(title='Test Position')
         cat = Category.objects.create(title='Test Category')
         units = Units.objects.create(title='Test Units')
-        item_1 = Item.objects.create(title='Test item 1', cat=cat, wh=wh, pos=pos, units=units)
-        item_2 = Item.objects.create(title='Test item 2', cat=cat, wh=wh, pos=pos, units=units)
-        url = reverse('item-list')
+        self.item_1 = Item.objects.create(title='Test item 1', cat=cat, wh=wh, pos=pos, units=units, amount=10)
+        self.item_2 = Item.objects.create(title='Test item 223', cat=cat, wh=wh, pos=pos, units=units, amount=55)
+        self.item_3 = Item.objects.create(title='Test item 3', cat=cat, wh=wh, pos=pos, units=units, amount=223)
+        self.item_4 = Item.objects.create(title='Test item 1000', cat=cat, wh=wh, pos=pos, units=units, amount=55)
 
+    def test_get(self):
+        url = reverse('item-list')
         response = self.client.get(url)
-        serializer_data = ItemsSerializer([item_1, item_2], many=True).data
+        serializer_data = ItemsSerializer([self.item_1, self.item_2, self.item_3, self.item_4], many=True).data
+        self.assertEqual(status.HTTP_200_OK, response.status_code)
+        self.assertEqual(serializer_data, response.data)
+
+    def test_get_filter(self):
+        url = reverse('item-list')
+        response = self.client.get(url, data={'amount': 55})
+        serializer_data = ItemsSerializer([self.item_2, self.item_4], many=True).data
+        self.assertEqual(status.HTTP_200_OK, response.status_code)
+        self.assertEqual(serializer_data, response.data)
+
+    def test_get_search(self):
+        url = reverse('item-list')
+        response = self.client.get(url, data={'search': 223})
+        serializer_data = ItemsSerializer([self.item_2, self.item_3], many=True).data
+        print(serializer_data)
+        print(response.data)
+        self.assertEqual(status.HTTP_200_OK, response.status_code)
+        self.assertEqual(serializer_data, response.data)
+
+    def test_get_ordering(self):
+        url = reverse('item-list')
+        response = self.client.get(url, data={'ordering': '-id', 'amount': '55'})
+        serializer_data = ItemsSerializer([self.item_4, self.item_2], many=True).data
+        print(serializer_data)
+        print(response.data)
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertEqual(serializer_data, response.data)

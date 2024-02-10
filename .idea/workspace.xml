@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de69aaa2-d473-45ee-b1a0-a4afcf67d4ea" name="Changes" comment="Added tests for api and serializers">
+    <list default="true" id="de69aaa2-d473-45ee-b1a0-a4afcf67d4ea" name="Changes" comment="Coverage installed for testing and reporting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/warehouse/item/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/item/tests/test_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/warehouse/item/tests/test_serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/item/tests/test_serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse/item/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/item/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse/warehouse/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/warehouse/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +50,14 @@
     "Python tests.Python tests for test_api.ItemsAPITestCase.executor": "Run",
     "Python tests.Python tests for test_logic.LogicTestCase.executor": "Run",
     "Python tests.Python tests for test_logic.LogicTestCase.test_plus.executor": "Run",
+    "Python tests.Python tests in test_serializers.py.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_api.ItemsAPITestCase">
+  <component name="RunManager" selected="Python tests.Python tests in test_serializers.py">
     <configuration name="Python tests for test_api.ItemsAPITestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="warehouse" />
       <option name="ENV_FILES" value="" />
@@ -100,8 +103,24 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_serializers.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="warehouse" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/warehouse/item/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/warehouse/item/tests/test_serializers.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_serializers.py" />
         <item itemvalue="Python tests.Python tests for test_api.ItemsAPITestCase" />
         <item itemvalue="Python tests.Python tests for test_logic.LogicTestCase.test_plus" />
         <item itemvalue="Python tests.Python tests for test_logic.LogicTestCase" />
@@ -172,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707571767597</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Coverage installed for testing and reporting">
+      <option name="closed" value="true" />
+      <created>1707573396207</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707573396207</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Coverage installed for testing and reporting">
+      <option name="closed" value="true" />
+      <created>1707573403204</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707573403204</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,6 +215,7 @@
     <MESSAGE value="Code formatting" />
     <MESSAGE value="Added models for warehouse" />
     <MESSAGE value="Added tests for api and serializers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests for api and serializers" />
+    <MESSAGE value="Coverage installed for testing and reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coverage installed for testing and reporting" />
   </component>
 </project>
