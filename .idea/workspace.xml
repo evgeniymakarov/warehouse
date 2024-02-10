@@ -4,13 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de69aaa2-d473-45ee-b1a0-a4afcf67d4ea" name="Changes" comment="Added models for warehouse" />
+    <list default="true" id="de69aaa2-d473-45ee-b1a0-a4afcf67d4ea" name="Changes" comment="Added models for warehouse">
+      <change afterPath="$PROJECT_DIR$/warehouse/item/logic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/warehouse/item/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/warehouse/item/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/warehouse/item/tests/test_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/warehouse/item/tests/test_logic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/warehouse/item/tests/test_serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse/item/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse/item/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/item/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse/warehouse/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/warehouse/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="evgenioni &lt;mail@evgenioni.ru&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -20,19 +44,78 @@
   "associatedIndex": 4
 }]]></component>
   <component name="ProjectId" id="2c5JTmMnOJ5lziTMQwbyIwwQjFa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_api.ItemsAPITestCase.executor": "Run",
+    "Python tests.Python tests for test_logic.LogicTestCase.executor": "Run",
+    "Python tests.Python tests for test_logic.LogicTestCase.test_plus.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RunManager" selected="Python tests.Python tests for test_api.ItemsAPITestCase">
+    <configuration name="Python tests for test_api.ItemsAPITestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="warehouse" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/warehouse/item/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.ItemsAPITestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_logic.LogicTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="warehouse" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/warehouse/item/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_logic.LogicTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_logic.LogicTestCase.test_plus" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="warehouse" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/warehouse/item/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_logic.LogicTestCase.test_plus&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_api.ItemsAPITestCase" />
+        <item itemvalue="Python tests.Python tests for test_logic.LogicTestCase.test_plus" />
+        <item itemvalue="Python tests.Python tests for test_logic.LogicTestCase" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,11 +156,28 @@
       <option name="project" value="LOCAL" />
       <updated>1707413999703</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added models for warehouse">
+      <option name="closed" value="true" />
+      <created>1707414408137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707414408137</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added models for warehouse">
+      <option name="closed" value="true" />
+      <created>1707414455576</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707414455576</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
+    <MESSAGE value="Code formatting" />
     <MESSAGE value="Added models for warehouse" />
     <option name="LAST_COMMIT_MESSAGE" value="Added models for warehouse" />
   </component>
