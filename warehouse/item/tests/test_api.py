@@ -35,8 +35,6 @@ class ItemsAPITestCase(APITestCase):
         url = reverse('item-list')
         response = self.client.get(url, data={'search': 223})
         serializer_data = ItemsSerializer([self.item_2, self.item_3], many=True).data
-        print(serializer_data)
-        print(response.data)
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertEqual(serializer_data, response.data)
 
@@ -44,7 +42,5 @@ class ItemsAPITestCase(APITestCase):
         url = reverse('item-list')
         response = self.client.get(url, data={'ordering': '-id', 'amount': '55'})
         serializer_data = ItemsSerializer([self.item_4, self.item_2], many=True).data
-        print(serializer_data)
-        print(response.data)
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertEqual(serializer_data, response.data)
